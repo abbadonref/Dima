@@ -1,0 +1,23 @@
+package com.company;
+import java.util.Scanner;//
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner word = new Scanner(System.in);
+        int a=word.nextInt();
+        System.out.println("number" +a);
+        // write your code here
+        Scanner number = new Scanner(System.in);
+        int b=number.nextInt();
+        System.out.println("number" +b);
+        int a;//
+        a=10;
+        int b=6;
+        int z;
+        z=a*b;
+        int c;
+        c=a*a;
+        System.out.println ("Площадь прямоугольника со стороной"+10+"см и "+6+"см равна"+z+"см");
+        System.out.println ("площадь квадрата со стороной"+10+"см равна"+6+"см");
