@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);//
+        System.out.println("Введите 1 число:");
+
+
+        if (sc.hasNextInt()) {
+            double a =sc.nextShort();//указываем переменную
+            System.out.println("Введите число:");
+            double b = sc.nextShort();
+            System.out.println("второе число в степени a: " + Math.pow(b,a));
+            System.out.println("ваш корень из первого числа " + a + "    " + Math.sqrt(a));
+
+        } else {
+            System.out.println("глупенький");
+        }
+
+    }
+}
