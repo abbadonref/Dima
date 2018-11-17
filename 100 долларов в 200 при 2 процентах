@@ -1,0 +1,20 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        //сумма от 1 до 10
+        /*int a= 0;
+        for (int i=1;i<=10;i++){ a=a+i;}
+        System.out.println("here you are"+a);*/
+
+        //
+        int a=0;
+        double i=100;
+        while(i<=200) {
+            a=a+1;
+            i=i*0.02+i;
+
+        }  System.out.println("через "+a+" лет");
+    }
+}
+
