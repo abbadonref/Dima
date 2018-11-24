@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //number 1
+
+
+//:String sc = "375-29-1234567";
+        //:  String[] buf = sc.split("-");
+        //: System.out.println("country: " + buf[0]);
+        //:System.out.println("operator: " +  buf[1]);
+        //: System.out.println("number: " +  buf[2]);
+
+
+        //number 2//
+
+
+       /* Scanner sc = new Scanner(System.in);
+        System.out.println("Введите ваш мейл: ");
+        String s = sc.next();
+        boolean Contain1 = s.contains("mail");
+        boolean Contain2 = s.contains("@");
+         boolean ends1 =s.endsWith("com");
+        boolean ends2 =s.endsWith("ru");
+        boolean ends3 =s.endsWith("inbox");
+                  if (Contain1&&Contain2&&ends1&&ends2&&ends3){
+            System.out.println("cool");}
+                       else {
+                    System.out.println("bad");
+                }*/
+
+
+//number2.5
+
+
+       /*  String s =  "hello ,ass";
+        System.out.println("ваш новый текст: "+s.replace("ass","honey"));*/
+
+
+       //number 3
+
+
+        /*Scanner sc = new Scanner(System.in);
+        System.out.println("введите вашу строку: ");
+        String s =sc.next();
+        System.out.println("Нижний регистр -   "+ s.toLowerCase(//параметр
+        ));*/
+
+
+//number 4
+
+
+        /*Scanner sc = new Scanner(System.in);
+        System.out.println("Введите две одинаковые строки: ");
+        String b = sc.next();
+        String s = sc.next();
+        //boolean ShouldBeEqual =b&&s.equals("b","s")
+        if (b.equals(s)){
+            System.out.println("одинаковы");
+        }
+         else {
+            System.out.println("не одинаковы");*/
+
+
+        //number 5
+
+
+        /*Scanner sc = new Scanner(System.in);
+        System.out.println("Введите вашу строку 1: ");
+        String s = sc.nextLine();
+        System.out.println("Введите вашу строку 2: ");
+        String b = sc.nextLine();
+        String v=s+" "+b;
+        System.out.println(("ваша строка:" + v));*/
