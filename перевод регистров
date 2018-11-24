@@ -1,0 +1,4 @@
+Scanner sc = new Scanner(System.in);
+        System.out.println("введите вашу строку: ");
+        String s =sc.next();
+        System.out.println("Нижний регистр -   "+ s.toLowerCase(/*параметр*/));
