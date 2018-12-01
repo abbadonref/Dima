@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int b =75;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("введите ваш возвраст в годах: ");
+        double a = sc.nextShort();
+        System.out.println("введите кол-во дней после вашего последнего дня рождения: ");
+        double c = sc.nextInt();
+        double n = (a*365+c);
+        double x =((b*364+25*365)-n);
+        System.out.println("вам осталось до вашей сотки дней : " + x); 
+
+    }
+    }
