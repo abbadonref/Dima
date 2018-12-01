@@ -1,0 +1,23 @@
+ <html>
+<head>
+	<title>Главная страница - страница обо мне</title>
+</head>
+<body>
+<center><h1> Информация </h1></center>
+<body background=" https://s1.1zoom.ru/b4756/444/Monsters_Alien_Covenant_Teeth_523315_2560x1440.jpg"  width="1920px" height="1080px">
+
+ <img src="">
+ <table border="2" width="100%" cellpadding="20" align="center"  margin="auto" bgcolor="#FFFF00">
+<tr>
+<th>intellegent</th>
+<th>not intellent</th>
+</tr>
+<tr>
+	<td>me</td>
+	<td>okun'</td>
+</tr>
+</table>
+</img>
+</body>
+</html>
+
