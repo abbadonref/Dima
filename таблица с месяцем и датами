@@ -1,0 +1,31 @@
+ <html>
+<head>
+	<title>Главная страница - страница обо мне</title>
+	<meta charset="utg-8" />
+	<table width="90%" border ="1"cellpadding="7" cellspacing="0">
+		<tr>
+			<td  rowspan="7" width="10%" >ziza</td>
+				<th colspan="7">Декабрь</th>
+				</tr>
+				<tr>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+					<th>5</th>
+					<th>6</th>
+					<th>7</th>
+				</tr>
+				<tr>
+					<th lengt="10">1</th><th>2</th><th>3</th><th>4</th><th>5</th><th></th>6<th></th>
+				</tr>
+				<tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+				<tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+				<tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+				<tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+</table>
+</head>
+<body>
+ 
+</body>
+</html>
