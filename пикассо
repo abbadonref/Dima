@@ -1,0 +1,40 @@
+ <html>
+<head>
+	<title>Главная страница - страница обо мне</title>
+	<meta charset="utg-8" />
+	 
+</style>
+<table     border="1px"  cellspacing="5px"
+   width="40%" border ="1"cellpadding="7" > 
+		<tr> 
+			<th  colspan="2" bgcolor="ffffff"></th> 
+				<th colspan="3" bgcolor="#ffffff"></th> 
+				<th colspan="2" bgcolor="#fffa69"></th>
+			</tr>
+			<tr>
+			<th rowspan="2"></th>
+			<th rowspan="4" colspan="4" bgcolor="#ff5b2d"></th>
+			<th rowspan="2" colspan="2" bgcolor="#fffa69"></th>
+		</tr>
+		<tr>
+			<th colspan="1" rowspan="3" bgcolor="ffffff"></th>
+			<th rowspan="2" bgcolor="ffffff"></th>
+			<th rowspan="2" bgcolor="ffffff"></th>
+			<tr>
+				<th colspan="2"></th>
+				<th colspan="2"></th>
+				<th colspan="2"></th>
+			</tr>
+		 
+
+
+
+
+	
+	 
+</table>
+</head>
+<body>
+ 
+</body>
+</html>
