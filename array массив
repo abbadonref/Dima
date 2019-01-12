@@ -1,0 +1,11 @@
+public class Main {
+
+    public static void main(String[] args) {
+        double [][] array = new double [2] [6];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j]=Math.random()*200+6;
+                System.out.println((int) array[i][j] + "\t");
+            }
+            System.out.println();
+    }}}
