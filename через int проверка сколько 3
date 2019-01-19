@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number");
+        int str=sc.nextInt();
+        int s1=0,c ;
+        String str1 = Integer.toString(str);
+        int b=str1.length();
+        for (int i=0; i<b; i++){
+       c= str%10;
+       str=str/10;
+         if(c == 3){
+             s1++;
+         }
+
+    } System.out.println(s1);}}
