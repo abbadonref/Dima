@@ -1,0 +1,21 @@
+port java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("ведите число первое");
+        int a =scanner.nextInt();
+        System.out.println("ведите второе");
+        int b =scanner.nextInt();
+        System.out.println("ведите гипотенузу");
+        int c =scanner.nextInt();
+if (a*a+b*b == c*c){
+    int v=c*c;
+    System.out.println(v);
+    else (a*a+b*b != c*c){
+        System.out.println("неа");
+    }
+}
+    }
+}
