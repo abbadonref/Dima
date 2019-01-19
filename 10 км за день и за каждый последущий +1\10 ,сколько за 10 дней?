@@ -1,0 +1,28 @@
+public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        double arr[]=new double[10];
+        double probeg = 10;
+        double probeg7 = 10;
+
+
+        arr[0]=10;
+         int i;
+        for(i=1;i<10;i++){
+            probeg=probeg*1/10+probeg;
+            arr[i]=probeg;
+        }
+        System.out.println(probeg);
+        System.out.println("нужен за первые 7 дней ");
+        String s = scn.nextLine();
+        int r = 0;
+        if(s == "yes" ){
+            for(i=1;i<7;i++) {
+                probeg7 = probeg7 * 1/10 + probeg7;
+            int r2 =r+1;
+            }
+            System.out.println("ваш пробег" + probeg7 + "за "+r2+"дней");
+
+        }
+    }
+       
+}
