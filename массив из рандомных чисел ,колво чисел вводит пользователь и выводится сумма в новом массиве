@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("введите колво чисел в массиве ");
+        int n=scn.nextInt();
+        int [] array =new int[n];
+        int [] array1 =new int[n];
+        int [] arraysum =new int[n];
+        array[0]=1;
+        array1[0]=1;
+        arraysum[0]=1;
+        int r =0;
+        for(int i=0;i<n;i++){
+            array [i] = ( (int) (Math.random()*19)+1);// радномно генерируется массив 1 диапазон от 1 до 20 ,int нужен для того , чтобы числа были без точек.
+            array1 [i] = ( (int) (Math.random()*19)+1);// радномно генерируется массив 2 диапазон от 1 до 20 ,int нужен для того , чтобы числа были без точек.
+            arraysum[i] = array[i]+array1[i];//сложение массивов
+            int r2 =r+1;
+            System.out.println(r2 +" число в 1 массиве" + array[i]);
+            System.out.println(r2 + " число в 2 массиве" + array1[i]);
+            System.out.println("сумма чисел в 1 и 2 массиве " + arraysum[i]);
+        }
+    }
+}
