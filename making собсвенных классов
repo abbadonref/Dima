@@ -1,0 +1,33 @@
+
+class Box {
+    int width = 10;
+    int height = 10;
+    int length = 10;
+    int v = width * height * length;
+
+    String getVolume (){
+        return "Объем коробки " + (width*height*length);
+}
+public class Main {
+
+    public static void main(String[] args) {
+        Box ObjBox = new Box();
+        System.out.println(ObjBox.height);
+            ObjBox.width=0;
+
+            Box LittleBox= new Box();
+        int width1 = 10;
+        int height1 = 10;
+        int length1 = 15;
+        int f = width1 * height1 * length1;
+
+        Box MaxBox= new Box();
+        int width2= 30;
+        int height2 = 40;
+        int length2 = 80;
+        int w= width2 * height2 * length2;
+        System.out.println(w);
+
+        System.out.println(MaxBox.getVolume());
+        }
+
