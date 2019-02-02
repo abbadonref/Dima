@@ -1,0 +1,44 @@
+ public class Main {
+     public static void main(String[] args) {
+
+     class Book {
+         private int pages;//колво страниц
+         public String name;//имя
+         private float weight;//вес
+
+         public void getInfoBook() {
+             System.out.println("В книге " + name + " находится " + pages + " страниц");
+             System.out.println("By the way it weights: " + weight + " kg");
+             System.out.println("");
+
+         }
+
+         Book(int pages, float weight) { //конструкторы
+             this.pages = pages;//страницы преобразование
+             this.weight = weight;//вес преобразование
+         }
+
+         Book(int pages, float weight, String name) {
+             this.pages = pages;
+             this.weight = weight;
+             this.name = name;
+         }
+     }
+         Book sherlock_holms = new Book (460,1.7f);
+     sherlock_holms.name = "ШЕРЛОК ХОЛМС";
+         sherlock_holms.getInfoBook();
+
+         Book green_mile = new Book (222,34.5f,"Зеленая миля");
+          green_mile.getInfoBook();
+
+         Scanner sc=new Scanner(System.in);
+         System.out.println("название книги :");
+         String str=sc.next();
+         if(str.equals(green_mile.name)){
+            green_mile.getInfoBook();
+         } else if(str.equals(sherlock_holms.name)){
+    sherlock_holms.getInfoBook();
+}
+else System.out.println("ny ty i ");
+ }
+ }
