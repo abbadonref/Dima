@@ -1,0 +1,62 @@
+MAIN
+
+
+
+
+package math;
+import math.PRIMER;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //Scanner x1 = new Scanner(System.in);
+
+        //PRIMER obj_abc = new PRIMER(x1.nextInt(), x1.nextInt());
+        Scanner x1 = new Scanner(System.in);
+        Scanner y1 = new Scanner(System.in);
+
+         PRIMER obj_abc = new PRIMER(x1.nextInt(), y1.nextInt());
+        System.out.println(obj_abc.X1Y1());
+
+    }
+}
+
+
+Algebra
+math 
+
+
+
+
+
+package math;
+
+
+import static java.lang.StrictMath.sqrt;
+
+public class PRIMER {
+    public int x;
+    public int y;
+    public double a;
+    public  PRIMER (int x1,int y1)
+    {x=x1;y=y1;}
+    public String X1Y1(){
+       a=(x^4-y^4)/((x^2+y*(y-2*x))*(x-y)/(x*y+x^2)-(2*y);
+               int c=x^2+y*(y-2*x);
+               int b = x*y+x^2;
+               if (c==0) {
+                   return "нет решений";
+                   //System.exit(0);
+               }
+               else if(b==0){
+                   return"нет решений";
+                   //System.exit(0);
+               }
+               else{
+                   return "otvet " +a;
+               }
+
+
+
+    }
+}
