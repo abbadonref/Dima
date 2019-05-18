@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        //поле компа
+        char[][] field={  { '+', '+', '+','+', '+', '+' },
+                          { '+', '+', '+','+', '+', '+' },
+                          { '+', '+', '+','+', '+', '+' },
+                          { '+', '+', '+','+', '+', '+' },
+                          { '+', '+', '+','+', '+', '+' },
+                          { '+', '+', '+','+', '+', '+' } };
+//поле человека
+        char[][] field1={ {  '+', '+', '+','+', '+', '+' },
+                { '+', '+', '+','+', '+', '+' },
+                { '+', '+', '+','+', '+', '+' },
+                { '+', '+', '+','+', '+', '+' },
+                { '+', '+', '+','+', '+', '+' },
+                { '+', '+', '+','+', '+', '+' } };
+
+
+
+
+    //действия компа
+        int x = (int) (Math.random() * 6), y = (int) (Math.random() * 6);
+        for(int d=0;d<5;d++) {
+            while (field[x][y] == '0' || field[x][y] == 'X') {
+                x = (int) (Math.random() * 6);
+                y = (int) (Math.random() * 6);
+            }
+            field[x][y] = '0';
+        }
+        //действия человека
+        System.out.println("Введите x-ы и y-и для двумерного массива карты боя (кол-во 10 цифр)без пробелов в одну строку");
+        Scanner sc = new Scanner(System.in);
+        String number = sc.next();
+        int r1 = number.charAt(1);
+        int r2 = number.charAt(3);
+        int r3 = number.charAt(5);
+        int r4 = number.charAt(7);
+        int r5 = number.charAt(9);
+        int r6= number.charAt(0);
+        int r7= number.charAt(2);
+        int r8= number.charAt(4);
+        int r9= number.charAt(6);
+        int r10= number.charAt(8);
+        field1[r6][r1]='0';
+        field1[r7][r2]='0';
+        field1[r8][r3]='0';
+        field1[r9][r4]='0';
+        field1[r10][r5]='0';
+        //вывод данных о своем поле
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                System.out.print(field1[i][j]);
+            }
+            System.out.println();
+        }
+        //вывод данных о пк
+        for (int i = 0; i < 6; i++) {
+                for (int j = 0; j < 6; j++) {
+                    System.out.print(field[i][j]);
+                }
+                System.out.println();
+    }
+}}
