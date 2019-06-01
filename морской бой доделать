@@ -3,6 +3,7 @@
 public class Main {
     public static void main(String[] args){
         int sss=0;
+        int sss1=0;
         //поле компа
         char[][] field={  { '+', '+', '+','+', '+', '+' },
                 { '+', '+', '+','+', '+', '+' },
@@ -21,16 +22,42 @@ public class Main {
 
 
 
-        //действия компа
-        int x = (int) (Math.random() * 6), y = (int) (Math.random() * 6);
-        for(int d=0;d<5;d++) {
-            while (field[x][y] == '0' || field[x][y] == 'X') {
-                x = (int) (Math.random() * 6);
-                y = (int) (Math.random() * 6);
-            }
-            field[x][y] = '0';
+        //расположение флота компа
+        int x;
+        int y;
+        x = (int) (Math.random() * 6);
+        y = (int) (Math.random() * 6);
+        if (x+2>=5) {
+            x = (int) (Math.random() * 6);
+
         }
-        //действия человека
+
+        field[x][y] = '0';
+        field[x+1][y] = '0';
+        field[x+2][y] = '0';
+
+        int c;
+        int b;
+        b = (int) (Math.random() * 6);
+        c = (int) (Math.random() * 6);
+        if (b+2>=5||field[b][c]=='0'||field[b+1][c]=='0'||field[+2][c]=='0'){
+            b = (int) (Math.random() * 6);
+
+        }
+
+        field[b][c] = '0';
+        field[b+1][c] = '0';
+        field[b+2][c] = '0';
+
+        int x1 = (int) (Math.random() * 6), y1 = (int) (Math.random() * 6);
+        for(int d=0;d<3;d++) {
+            if (field[x1][y1] == '0'){
+                x1 = (int) (Math.random() * 6);
+                y1 = (int) (Math.random() * 6);
+            }
+            field[x1][y1] = '0';
+        }
+        //расположение флота человека
         System.out.println("Введите x-ы и y-и для двумерного массива карты боя (кол-во 10 цифр) с пробелами в одну строку");
         Scanner sc = new Scanner(System.in);
 
@@ -55,8 +82,8 @@ public class Main {
         //вывод данных о своем поле
         System.out.println("экран человека ");
         for (int f = 0; f < 6; f++) {
-            for (int b = 0; b < 6; b++) {
-                System.out.print(field1[f][b]);
+            for (int l = 0; l < 6; l++) {
+                System.out.print(field1[f][l]);
             }
             System.out.println();
 
@@ -74,9 +101,8 @@ public class Main {
 
 
         //собственно говоря сам бой со стороны игрока
-        for (int h = 0; h < 6; h++) {
-            for (int n = 0; n < 6; n++) {
-                if (field[h][n] == '0' || field[h][n] == '+'||field[h][n] =='x') {
+
+
                     System.out.println("собственно координата удара?");
 
                     Scanner xx = new Scanner(System.in);
@@ -85,14 +111,14 @@ public class Main {
                     int c2 = xx.nextInt() - 1;
 
                     if (field[c1][c2] == '+') {
-                        System.out.println("мимо");
+                        System.out.println("ты промазал");
                     }
                     if (field[c1][c2] == '0') {
                         System.out.println("ты,блин,попал и убил");
                         field[c1][c2] = 'x';
                         sss++;
                     }
-                    if(sss==5){
+                    if(sss==9){
                         System.out.println();
                         System.out.println("!!все корабли пали,ты победил!!");
                         return;
@@ -105,16 +131,37 @@ public class Main {
                         }
                         System.out.println();
                     }
-                }
-            }}
-//карта боя компа
+        System.out.println();
+
+
+            // сам бой со стороны компа
+        int x2 = (int) (Math.random() * 6), y2 = (int) (Math.random() * 6);
+
+            if(field[x2][y2]=='+'){
+                field[x2][y2]='p';
+                System.out.println("комп промазал,вывод данных  ");
+
+
+        if(field[x2][y2]=='0'){
+            sss1++;
+            System.out.println("комп попал и убил,вывод данных");
+            field[x2][y2]='x';
+        }
+        if (sss1==9){
             System.out.println();
-            for (int i = 0; i < 6; i++) {
-                for (int j = 0; j < 6; j++) {
-                    System.out.print(field[i][j]);
+            System.out.println("проиграл ,ха ");
+            return;
+
+        }
+                for (int f = 0; f < 6; f++) {
+                    for (int l = 0; l < 6; l++) {
+                        System.out.print(field1[f][l]);
+                    }
+                    System.out.println();
                 }
-                System.out.println();
             }
+//карта боя компа
+
 
 
 //1 2 1 3 1 4 1 5 1 1
