@@ -1,0 +1,69 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdbool.h>
+int main(){
+//    float x ,y ,res;
+
+
+//  scanf("%f", &x);
+//    scanf("%f", &y);
+//   res = x / y;
+//    printf("res: %.0f", res);
+
+//    res = x / y;
+//    printf("result: %.2f\n", res);
+
+//    char s = "S";
+//    printf("%c", s);
+//    int num_first = 100;
+//    short s = 6;// -32 768 - 32 768
+//  unsigned short a = 5;// нельзя установить отрицательные числа(0 - 64 000)
+//    unsigned int c = 34000;// 0 - 4 mln
+//    signed int x = 5;
+
+//    long a2 = 5;
+//    unsigned long a3 = 23000;// 0 - 16 mln
+  //  unsigned long long a4 = 5;// 0 - 72mln
+ //   int x=5, y=3, res;// - 2mln - 2 mln
+
+    //float a6 = 4.55465f;
+    //double a7 = 4.32424343;// x2 float
+    //char sum = "K";// символ
+    //bool ishascar = True;
+    //res = x + y;
+//     int arr[5] = {5,6,7,8,9};
+//     arr[0] = 56;
+//     printf("%d", arr[0] );
+
+
+  #include <stdio.h>
+#include <stdbool.h>
+
+  int main() {
+      bool ishascar = false;
+      int x = 0;
+
+     while (ishascar) {
+            printf("enter digit");
+            scanf("%d", &x );
+            if (x == 1)
+                ishascar = false;
+      int  i = 0;
+      while (i < 10){
+        printf("%d\n", i);
+        i++;
+      }
+
+     }
+     do {
+        printf("%d", "hello");
+     } while(ishascar);
+
+      return 0;
+  }
+
+
+
+      return 0;
+
+}
